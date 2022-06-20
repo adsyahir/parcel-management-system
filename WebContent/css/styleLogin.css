@@ -1,0 +1,379 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: sans-serif;
+    background-color: black;
+
+    
+}
+
+body::after {
+    content: "";
+    background-image: url(img/Slider-Revolution-SendReceive-1920x1080-Delivery_00-1.jpg);
+    opacity: 0.3;
+  
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+  @font-face {
+    font-family: customFont;
+    src: url("astroarmadagrad.ttf") ;
+  }
+
+ul,nav
+{
+    list-style:none;
+}
+
+a
+{
+    text-decoration:none;
+    cursor: pointer;
+    color:inherit;
+  
+}
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:white;
+    padding: 35px 100px 0;
+}
+
+header h2
+{
+    text-transform: uppercase;
+    flex:1;
+}
+
+header nav
+{
+    display:flex;
+    
+}
+
+header nav li
+{
+    margin:0 15px;
+}
+
+
+header nav li:first-child
+{
+    margin-left: 0;
+}
+
+header nav li:last-child
+{
+    margin-right: 0px;
+}
+
+@media (max-width:1000px)
+{
+    header
+    {
+        padding:20px 50px;
+    }
+
+    @media(max-width:700px)
+    {
+        header
+        {
+            flex-direction: column;
+        }
+
+        header h2
+        {
+            margin-bottom: 15px;
+        }
+
+        header nav li
+        {
+            margin: 0 7px;
+        }
+    }
+}
+
+/*banner area*/
+
+section
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding:110px 100px;
+    flex-wrap: wrap;
+
+}
+@media (max-width:1000px)
+{
+   section
+   {
+       padding:100px 50px;
+   }
+   
+}
+@media (max-width:600px)
+{
+    section
+    {
+        padding:125px 30px;
+    }
+}
+
+ .search input[type=search] 
+{
+    position: relative;
+     top:90px;
+     margin-right: 10px;
+     outline:none;
+     width: 400px;
+     height: 50px;
+     color:white;
+     resize: vertical;
+    font-size:20px;
+     border-top-style: hidden;
+     border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0);
+ 
+
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+
+button
+{
+
+  position: relative;
+  top:70px;
+ 
+  width: 1%;
+  padding: 5x;
+  background: #2196F3;
+  color: transparent;
+  border-top:none;
+  border-left: none;
+  border-right:none;
+  border:yellow;
+  background-color: rgba(0, 0, 0, 0); 
+  
+}
+div
+{
+    display: block;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+section p
+{
+    max-width: 800px;
+    text-align:center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+
+    line-height:2;
+}
+
+.banner-area
+{
+    position:relative;
+    justify-content: center;
+    min-height: 100vh;
+    color:#fff;
+    text-align:center;
+
+}
+
+
+.banner-area .banner-img::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+#customers {
+    position: relative;
+    
+    top:20px;
+    min-width: 30%;
+    width: 50%;
+    border: 1px solid;
+    
+  }
+  
+  #customers td, #customers th {
+    
+    padding: 8px;
+    
+  }
+  
+
+  
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+  }
+
+  .margin
+  {
+      margin-top:30px;
+      margin-bottom: 30px;
+  }
+
+  h1
+  {
+      position: relative;
+      top:30px;
+      font-family: customFont;
+      font-size: 5vw;
+  }
+
+ .container {
+	background:rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  width:450px;
+  display: flex;  
+  flex-direction: column;
+}
+
+.logo{
+  font-family: "museo-slab";  
+  font-size:20px;
+  text-align: center;
+  padding: 20px 20px 0;
+  margin:0;
+}
+
+.login-item {
+	color: #ffff;
+	padding:25px 25px 0;
+	margin: 20px 20px 0;	
+	border-radius: 3px;
+}
+
+input {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.user:before {
+  content: '\f007';
+  font: 14px fontawesome;
+	color: #5b5b5b;
+}
+
+.lock:before {
+  content: '\f023';
+  font: 14px fontawesome;
+	color: #5b5b5b;
+}
+
+.form input[type="password"], .form input[type="text"], .form input[type="submit"] {
+  width: 100%;
+}
+
+.form-login label,
+.form-login input[type="text"],
+.form-login input[type="password"],
+.form-login input[type="submit"] {
+  border-radius: 0.25rem;
+  padding: 1rem;
+  color: #3A3F44;  
+}
+
+.form-login label {
+  background-color: #222222;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.form-login input[type="text"], .form-login input[type="password"] {
+  background-color:transparent;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.form-login input[type="text"]:focus, .form-login input[type="text"]:hover, .form-login input[type="password"]:focus, .form-login input[type="password"]:hover {
+  background-color:transparent;
+}
+.form-login input[type="submit"] {
+  background-color: black;
+  color: #eee;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.form-login input[type="submit"]:focus, .form-login input[type="submit"]:hover {
+  background-color: #5a6464;
+  cursor: pointer;
+}
+.form-field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.text--center {
+  text-align: center;
+}
+
+
